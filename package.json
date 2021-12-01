@@ -8,8 +8,10 @@
   "main": "./build/server.js",
   "scripts": {
     "start": "sudo node ./build/server.js",
-    "build": "tsc -p ./ && cp -r ./src/app ./build ",
-    "build:run": "tsc -p ./ && sudo node ./build/server.js"
+    "start:win": "node ./build/server.js",
+
+    "build": "tsc -p ./ && cp -r ./src/app ./build",
+    "build:win": "node ./node_modules/typescript/bin/tsc -p ./ && xcopy .\\src\\app .\\build /e /y /q"
   },
   
   "dependencies": {
