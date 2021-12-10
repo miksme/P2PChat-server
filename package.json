@@ -11,7 +11,7 @@
     "start:win": "node ./build/server.js",
 
     "build": "tsc -p ./ && cp -r ./src/app ./build",
-    "build:win": "node ./node_modules/typescript/bin/tsc -p ./ && xcopy .\\src\\app .\\build /e /y /q"
+    "build:win": "node ./node_modules/typescript/bin/tsc -p ./ && xcopy .\\src\\app .\\build\\app\\ /e /y /q"
   },
   
   "dependencies": {
